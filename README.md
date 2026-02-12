@@ -47,13 +47,13 @@ The objective of this project is to predict whether a customer will churn using 
 
 ## 📂 Project Structure
 customer_churn_project/
-│
-├── app.py
-├── Model.pkl
-├── Scaler.pkl
-├── requirements.txt
-├── README.md
-└── notebooks/
+    │
+    ├── app.py
+    ├── Model.pkl
+    ├── Scaler.pkl
+    ├── requirements.txt
+    ├── README.md
+    └── notebooks/
 
 
 ---
