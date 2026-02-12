@@ -1,68 +1,51 @@
-Customer Churn Prediction
-Project Overview
+# Customer Churn Prediction
 
-Customer churn prediction is an important business problem where companies aim to identify customers who are likely to stop using their services.
-This project builds a machine learning classification model to predict whether a customer will churn based on customer attributes.
+## 📌 Project Overview
+Customer churn prediction is an important business problem where companies aim to identify customers who are likely to stop using their services.  
+This project develops a **machine learning classification model** to predict whether a customer will churn based on customer attributes and deploys the model using **Streamlit**.
 
-The application also includes a Streamlit web interface where users can input customer details and obtain churn predictions in real time.
+---
 
-Problem Statement
+## 🎯 Problem Statement
+The objective of this project is to predict whether a customer will churn using the following features:
 
-The objective of this project is to predict whether a customer will churn (leave the service) using the following features:
+- Age
+- Gender
+- Tenure
+- Monthly Charges
 
-Age
+**Target Variable**
+- Churn = 1 → Customer will churn
+- Churn = 0 → Customer will not churn
 
-Gender
+---
 
-Tenure
+## 🛠 Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost / Random Forest
+- Streamlit
+- Pickle
 
-Monthly Charges
+---
 
-Target:
+## ⚙️ Machine Learning Workflow
+1. Data preprocessing and cleaning  
+2. Feature encoding and scaling  
+3. Model training using classification algorithms  
+4. Model evaluation using:
+   - Accuracy
+   - Precision
+   - Recall
+   - F1-score  
+5. Model serialization using Pickle  
+6. Deployment using Streamlit
 
-Churn = 1 → Customer will churn
+---
 
-Churn = 0 → Customer will not churn
-
-Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-Scikit-learn
-
-XGBoost / Random Forest
-
-Streamlit
-
-Pickle
-
-Machine Learning Workflow
-
-Data preprocessing and cleaning
-
-Feature encoding and scaling
-
-Model training using classification algorithms
-
-Model evaluation using:
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 Score
-
-Model serialization using Pickle
-
-Deployment using Streamlit
-
-Project Structure
+## 📂 Project Structure
 customer_churn_project/
 │
 ├── app.py
@@ -72,28 +55,25 @@ customer_churn_project/
 ├── README.md
 └── notebooks/
 
-Running the Application
-Step 1: Install requirements
+
+---
+
+## ▶️ Running the Application
+
+### Install dependencies
+
 pip install -r requirements.txt
 
-Step 2: Run Streamlit app
+### Run Streamlit app
 streamlit run app.py
 
-Model Performance
 
-The trained model achieved approximately 80% accuracy on the test dataset.
-Evaluation was performed using classification metrics such as Precision, Recall, and F1-score to ensure balanced performance.
+## 📊 Model Performance
 
-Future Improvements
+The trained model achieved approximately **80% accuracy on the test dataset**.
+Performance evaluation was done using classification metrics such as Precision, Recall, and F1-score.
 
-Add more customer behavioral features
 
-Hyperparameter tuning for better performance
+## 👤 Author
 
-Deploy application on cloud platforms
-
-Add churn probability visualization dashboard
-
-Author
-
-Abhinay Narmeta
+## Abhinay Narmeta
